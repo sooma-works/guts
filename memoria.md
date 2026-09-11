@@ -10,8 +10,8 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 **En foco**
 
-- Armar este repo (`guts`) como base de contexto y memoria. Falta crearlo en GitHub
-  y pushear: `sooma-works/guts`, privado.
+- Repo `guts` andando y subido a github.com/sooma-works/guts. A partir de acá se
+  trabaja con Claude Code parado en `~/dev/guts`.
 
 **Pendiente**
 
@@ -34,6 +34,13 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-09-11 — Guts se mantiene solo
+
+Quedó establecido que actualizar **todos** los archivos del repo es tarea mía, en el
+momento y sin que me lo pidan, y que pusheo apenas hay cambios. El protocolo —qué
+archivo se toca y cuándo— está en `CLAUDE.md`, bajo "Mantenimiento". El repo se creó
+en github.com/sooma-works/guts (privado) y se subió.
 
 ### 2026-09-11 — Para qué existe todo esto
 

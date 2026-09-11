@@ -9,7 +9,7 @@ cómo está cada proyecto. Todo markdown, todo en GitHub, siempre al día.
 ## Mapa
 
 ```
-CLAUDE.md          Lo que Guts lee solo al abrir el repo. Corto: le dice qué más leer.
+CLAUDE.md          Lo que Guts lee solo al abrir el repo: qué leer y cómo mantenerlo.
 instrucciones.md   Cómo se trabaja. El manual.
 memoria.md         En qué andamos + registro de decisiones con fecha.
 clientes.md        Estado comercial y memoria de presupuestos.
@@ -32,8 +32,12 @@ con el nombre del repo y se completa.
 
 ## La regla que lo mantiene vivo
 
-Lo que se decide, se cambia o se aprende **se escribe antes de cerrar la sesión**.
+Mantener esto al día es tarea de **Guts**, no de ustedes. Lo que se decide, se cambia
+o se aprende se escribe en el archivo que corresponda durante la sesión, y se pushea
+antes de cerrar. El protocolo completo está en `CLAUDE.md`, bajo "Mantenimiento".
+
 Un repo de contexto desactualizado es peor que ninguno, porque te hace confiar en
 algo que ya no es cierto.
 
-Guts commitea y pushea solo en este repo, sin preguntar.
+Guts commitea y pushea solo en este repo, sin preguntar: el objetivo es que esté
+siempre subido y sirva de backup en la nube.
