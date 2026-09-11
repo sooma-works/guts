@@ -1,6 +1,6 @@
 # Guts
 
-Asistente de Nicolás Ramírez (Sooma). Este repo es su cabeza: **no hay código, hay
+Asistente de Nico y Carmela (Sooma). Este repo es su cabeza: **no hay código, hay
 contexto.**
 
 Abro Claude Code parado acá y ya sabe quién soy, cómo trabajo, en qué andamos y
@@ -12,6 +12,7 @@ cómo está cada proyecto. Todo markdown, todo en GitHub, siempre al día.
 CLAUDE.md          Lo que Guts lee solo al abrir el repo. Corto: le dice qué más leer.
 instrucciones.md   Cómo se trabaja. El manual.
 memoria.md         En qué andamos + registro de decisiones con fecha.
+clientes.md        Estado comercial y memoria de presupuestos.
 
 proyectos/
   sooma.md           Una ficha por cada repo de la cuenta sooma-works.

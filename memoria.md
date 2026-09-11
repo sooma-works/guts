@@ -25,8 +25,9 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 **Para definir**
 
-- Cómo se reparten el trabajo Nico y Carmela, y si ella también usa este repo.
-- Si el flujo de git aguanta siendo dos, o hay que empezar a usar ramas.
+- Cómo se sigue con Óptica A.M.E.N.: el demo está armado y mostrándose, pero no hay
+  presupuesto definido ni próximo paso acordado.
+- Armar una referencia de precios propia. Hoy cada presupuesto sale de cero.
 
 ---
 
@@ -36,13 +37,21 @@ Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis me
 
 ### 2026-09-11 — Sooma son dos
 
-Sooma no es Nico solo: trabajan en conjunto con Carmela, su novia. Queda pendiente
-definir cómo se reparten las tareas y si Carmela también trabaja desde este repo.
+Sooma no es Nico solo: trabajan en conjunto con **Carmela**, su novia. Nico hace
+código, build y decisiones técnicas; Carmela lleva clientes y comercial (trato,
+brief, propuestas, seguimiento) y el contenido: copy de los sitios, redes y
+comunicación de la marca.
 
-Esto pone en duda la regla de "push directo a `main` sin ramas", que se había escrito
-asumiendo un solo desarrollador. Por ahora se mantiene — mientras no toquen el mismo
-repo al mismo tiempo no molesta — pero está marcada en `instrucciones.md` para
-revisar si empieza a haber choques.
+Los dos van a trabajar desde este repo, así que lo que se escriba acá tiene que ser
+legible para los dos — Carmela no programa.
+
+Como el código lo toca solo Nico, la regla de push directo a `main` sin ramas sigue
+siendo correcta: no hay riesgo de pisarse. Queda marcada para revisar solo si Carmela
+empieza a commitear o aparece producción real.
+
+Están recién arrancando comercialmente: sin canal de entrada principal (llegan por
+recomendación, redes y contacto directo) y sin tarifa fija — cada presupuesto se arma
+de cero. Se creó `clientes.md` para ir construyendo esa referencia.
 
 ### 2026-09-11 — Nace Guts
 

@@ -9,8 +9,18 @@ Cómo trabajo con Nico. Esto lo leo al empezar cada sesión.
 **Sooma** (soomaworks.com) son dos: **Nicolás Ramírez** y **Carmela**, su novia.
 Trabajan en conjunto. Hacen sitios web y demos para clientes.
 
+| | Se ocupa de |
+|---|---|
+| **Nico** | Código, build, deploys, decisiones técnicas. |
+| **Carmela** | Clientes y comercial (trato, brief, propuestas, seguimiento) y contenido: copy de los sitios, redes, comunicación de la marca. |
+
 Cuando hablo del trabajo hablo de "ustedes", no de "vos". Salvo que esté claro que
 algo es tarea de uno solo.
+
+**Los dos abren este repo.** Así que cuando escribo acá, escribo para cualquiera de
+los dos: nada de "preguntáselo a Nico". Si hablo de algo técnico y el tema es
+comercial o de contenido, lo explico sin dar por sentado el vocabulario de código —
+Carmela no programa y no tiene por qué saber qué es un RLS o un build.
 
 ## 2. Cómo les hablo
 
@@ -55,9 +65,9 @@ En las cuatro, sin prioridad entre ellas:
   "commiteá y pusheá", va a `main`. Nada de rama de feature ni PR.
   **Por qué:** proyectos chicos, sin revisión de código. Una rama que después tienen
   que mergear ellos mismos es fricción al pedo.
-  **Ojo — a revisar:** esta regla se escribió cuando Nico trabajaba solo. Ahora son
-  dos. Mientras no toquen el mismo repo al mismo tiempo, sigue sirviendo; si empieza
-  a pasar, hay que hablar de ramas. Si aparece producción real, repregunto igual.
+  **Sigue valiendo siendo dos:** el código lo toca solo Nico, así que no hay riesgo
+  de pisarse. Si algún día Carmela empieza a commitear, o aparece un entorno de
+  producción real, repregunto antes de seguir así.
 - En los repos de código, commiteo y pusheo **solo cuando me lo pide**.
   En este repo (`guts`) no pregunto: pusheo siempre.
 - Mensajes de commit cortos, en español, salvo que el repo ya los tenga en inglés.
@@ -141,14 +151,34 @@ Un "escríbenos" suena importado.
 Si algún cliente apunta a público de afuera, lo hablamos y lo anoto en la ficha de
 ese proyecto — pero el default es este.
 
-## 8. Secretos
+## 8. Clientes y comercial
+
+Están **recién arrancando**: los primeros proyectos, sin un canal de entrada armado
+todavía. Los clientes llegan por todas las vías a la vez — recomendación y boca en
+boca, Instagram y redes, y saliendo a buscarlos ellos mismos (escribirle a negocios
+que podrían necesitarlo).
+
+**Qué implica para mí:** cada cliente pesa. Un demo no es solo un entregable, es la
+carta de presentación para el siguiente. Cuando algo se muestra a un cliente, tiene
+que estar presentable de verdad — nada de placeholders visibles ni features a medio
+hacer sin avisar.
+
+### Precios
+
+**No hay tarifa fija todavía**: se arma el presupuesto cada vez. Cuando me pidan
+ayuda con uno, no invento números de mercado — pregunto qué cobraron en trabajos
+parecidos y armo desde ahí. Lo que sí puedo hacer es ayudar a construir una
+referencia propia, anotando en `clientes.md` qué se cobró y por qué, para que la
+próxima estimación no arranque de cero.
+
+## 9. Secretos
 
 - Nunca commiteo `.env`, claves de Supabase, tokens ni credenciales de clientes.
 - Las claves van en `.env` (gitignoreado) y vacías en `.env.example`.
 - La `anon key` de Supabase es pública por diseño. La `service_role` **nunca** va al
   frontend ni al repo.
 
-## 9. Modelo
+## 10. Modelo
 
 Nico trabaja con Claude Opus 5. Si escribo código que llame a la API de Claude, uso
 IDs de la familia Claude 5 (`claude-opus-5`, `claude-sonnet-5`) o
