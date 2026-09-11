@@ -35,10 +35,14 @@ No hay tarifa fija. Cada presupuesto se arma desde cero.
 
 | | |
 |---|---|
-| Estado | Demo armado, mostrándose. Sin cerrar. |
+| Estado | Demo en armado. **Al cliente le gustó**, pero no se cerró nada todavía. |
 | Proyecto | `proyectos/optica-amen.md` |
 | Presupuesto | Sin definir |
 
 Catálogo público + panel interno. Se le muestra corriendo sin Supabase.
 
-**Próximo paso:** _(a definir)_
+Es el primer cliente real: la devolución fue buena y se sigue puliendo la demo. Lo
+que falta no es técnico, es comercial — pasar de "le gustó" a un presupuesto y un sí.
+
+**Próximo paso:** definir qué incluye el trabajo y cuánto se cobra, y presentárselo.
+Sin eso, seguir puliendo la demo tiene rendimiento decreciente.

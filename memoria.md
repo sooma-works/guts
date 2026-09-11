@@ -25,8 +25,8 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 **Para definir**
 
-- Cómo se sigue con Óptica A.M.E.N.: el demo está armado y mostrándose, pero no hay
-  presupuesto definido ni próximo paso acordado.
+- **Óptica A.M.E.N.: pasar de "le gustó" a cerrar.** Falta definir qué incluye el
+  trabajo y cuánto se cobra. Es lo que destraba el primer cliente real.
 - Armar una referencia de precios propia. Hoy cada presupuesto sale de cero.
 
 ---
@@ -34,6 +34,24 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-09-11 — Para qué existe todo esto
+
+Sooma es hoy una **segunda fuente de ingreso**. La meta es que crezca hasta poder
+dedicarse a desarrollar webs y plataformas, ayudando a personas y a marcas.
+
+El repo no nació de un problema: nació de querer estar más organizados con las tareas
+y tener memoria e instrucciones respaldadas en la nube. Mantenerlo al día no es un
+extra, es el objetivo.
+
+Consecuencia práctica: el tiempo es el recurso escaso. Las propuestas tienen que
+entrar en ratos libres, no ser el plan ideal de seis semanas.
+
+### 2026-09-11 — Óptica A.M.E.N. gustó pero no cerró
+
+Primer cliente real. La demo se sigue puliendo y la devolución fue buena, pero no hay
+nada cerrado. Lo que falta no es técnico sino comercial: definir alcance, precio y
+presentarlo.
 
 ### 2026-09-11 — Sooma son dos
 

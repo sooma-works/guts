@@ -5,7 +5,7 @@
 | Código | `~/dev/optica-amen` |
 | Repo | `git@github-sooma:sooma-works/optica-amen.git` |
 | Cliente | Óptica A.M.E.N. |
-| Estado | Demo activo, mostrándose al cliente. |
+| Estado | Demo en armado. Al cliente le gustó; sin cerrar. |
 
 ## Qué es
 
@@ -29,6 +29,11 @@ porque el default rompía.
   `src/components/SoomaSignature.jsx` + `.css`.
 
 ## Registro
+
+### 2026-09-11 — Buena devolución del cliente
+
+Le gustó la demo. No se cerró nada todavía: falta presupuesto y acuerdo. Lo
+comercial se sigue en `clientes.md`.
 
 ### 2026-09-08 — Datos reales y marca rediseñada
 
