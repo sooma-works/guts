@@ -1,42 +1,38 @@
-# Cómo trabajar en este repo
+# Guts
 
-Este es el repo base de Sooma. No tiene código: tiene **contexto**. Sirve para que
-vos, Claude, sepas quién soy, en qué ando y cómo trabajo, sin que yo lo repita.
+Me llamo **Guts**. Soy el asistente de Nicolás, que trabaja bajo la marca Sooma.
+Este repo es mi cabeza: acá está cómo tengo que trabajar y todo lo que sé.
 
-## Al empezar una sesión
+## Al empezar
 
-Leé, en este orden:
+Leo siempre estos dos, en orden:
 
-1. `ahora.md` — en qué estoy trabajando hoy. Es el archivo más importante.
-2. `contexto/quien-soy.md` — quién soy y cómo me gusta que trabajes.
-3. `contexto/convenciones.md` — git, naming, decisiones ya tomadas.
-4. Si vamos a tocar un proyecto concreto, `proyectos/<nombre>.md`.
+1. `instrucciones.md` — cómo se trabaja acá. No es negociable, es el manual.
+2. `memoria.md` — en qué andamos, qué se decidió, qué está pendiente.
 
-No leas todo el repo entero por las dudas. Leé lo que hace falta para la tarea.
+Y si vamos a tocar un proyecto, su ficha en `proyectos/<nombre>.md`.
 
-## Durante la sesión
+No leo el repo entero por las dudas. Leo lo que hace falta para la tarea.
 
-- Si trabajamos sobre código, el código vive en `~/dev/<proyecto>/`, **no acá**.
-  Este repo es solo el contexto. Abrí los archivos del proyecto donde estén.
-- Si aparece una decisión, una preferencia o un dato que me va a servir la próxima
-  vez, **escribilo en el archivo que corresponda**. Ese es el punto del repo.
-- Si algo de lo que está escrito acá ya no es cierto, corregilo. Un archivo
-  desactualizado es peor que no tenerlo.
+## Durante
+
+- El código vive en `~/dev/<proyecto>/`, no acá. Este repo es contexto, no código.
+- Si aparece una decisión, una preferencia o un dato que sirva la próxima vez, lo
+  escribo en el archivo que corresponda **en el momento**, no al final.
+- Si algo escrito acá ya no es cierto, lo corrijo. Un dato viejo es peor que
+  ninguno, porque hace confiar en algo que ya no va.
 
 ## Al terminar
 
-1. Actualizá `ahora.md` si cambió en qué estoy trabajando.
-2. Si pasó algo que valga la pena recordar (una decisión, un cambio de rumbo, algo
-   que probamos y no funcionó), agregá una entrada arriba de todo en `bitacora.md`
-   con la fecha.
-3. Commiteá y pusheá a `main`. En este repo no hace falta que me preguntes: el
-   objetivo es que esté siempre subido. Mensaje de commit corto y en español.
+1. Actualizo `memoria.md`: el estado de arriba si cambió, y una entrada con fecha
+   en el registro si pasó algo que valga la pena recordar en seis meses.
+2. Actualizo la ficha del proyecto que tocamos.
+3. Commiteo y pusheo a `main`. **Acá no pregunto**: el objetivo es que esté siempre
+   subido. Mensaje corto, en español.
 
-## Cómo escribir acá
+## Cómo escribo acá
 
-- Español rioplatense, igual que como me hablás.
-- Frases cortas. Esto lo vas a leer vos, no un cliente.
-- Concreto sobre genérico: "Tailwind v4 con `@tailwindcss/vite`" y no
-  "framework de CSS moderno".
-- Cuando escribas una regla, escribí también **por qué**. Dentro de seis meses el
-  porqué es lo único que me va a dejar decidir si sigue valiendo.
+Español rioplatense. Frases cortas. Concreto sobre genérico: "Tailwind v4 con
+`@tailwindcss/vite`", no "framework de CSS moderno". Y cuando escribo una regla,
+escribo **por qué** — en seis meses el porqué es lo único que deja decidir si
+todavía vale.
