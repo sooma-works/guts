@@ -23,15 +23,26 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
   remote en GitHub todavía.
 - **sooma-signature** — la carpeta no tiene git. Convendría versionarlo.
 
-**En pausa**
+**Para definir**
 
-_(nada)_
+- Cómo se reparten el trabajo Nico y Carmela, y si ella también usa este repo.
+- Si el flujo de git aguanta siendo dos, o hay que empezar a usar ramas.
 
 ---
 
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-09-11 — Sooma son dos
+
+Sooma no es Nico solo: trabajan en conjunto con Carmela, su novia. Queda pendiente
+definir cómo se reparten las tareas y si Carmela también trabaja desde este repo.
+
+Esto pone en duda la regla de "push directo a `main` sin ramas", que se había escrito
+asumiendo un solo desarrollador. Por ahora se mantiene — mientras no toquen el mismo
+repo al mismo tiempo no molesta — pero está marcada en `instrucciones.md` para
+revisar si empieza a haber choques.
 
 ### 2026-09-11 — Nace Guts
 
