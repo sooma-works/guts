@@ -55,18 +55,23 @@ desde esa carpeta, y el repo está ahí mismo.
 Lee el token de Claude Code de `~/.claude/.credentials.json` y lo refresca sola
 (desde el 2026-10-02).
 
-**Trampa conocida:** el `refreshToken` vence unas **25 h después** que el access
-token (~33 h desde el último login), no a los 30 días. Si la compu queda apagada más
-de un día y medio, nadie puede refrescarlo. No es un bug: se arregla corriendo
-`claude` en una terminal y haciendo `/login`. La app de escritorio no renueva ese
-archivo, solo el CLI.
+**Trampa conocida:** la sesión de Claude Code dura **~30 días desde el login** y no
+se estira al refrescar: el `refreshToken` rota, pero `refreshTokenExpiresAt` queda
+fijo. Pasada esa fecha no hay refresh posible, haya estado la compu prendida o no. Se
+arregla corriendo `claude` en una terminal y haciendo `/login`, una vez por mes. La
+app de escritorio no renueva ese archivo, solo el CLI.
+Evidencia (2026-10-22): login del 11/9 → venció el 10/10, aunque el CLI había
+refrescado el 9/10. Login del 22/10 → vence el 20/11.
 
 Desde el 2026-10-22 la extensión lo detecta sola (por `refreshTokenExpiresAt` o porque
 el servidor rechaza el refresh con 400/401) y muestra *"Session expired — run `claude`
 in a terminal and /login"*. Si el server está caído muestra el código HTTP y reintenta.
-Al refrescar, actualiza `refreshTokenExpiresAt` o lo borra si la respuesta no lo trae,
-porque el valor viejo haría creer que el token nuevo ya venció.
-El README ya está corregido.
+
+**Error a corregir:** en ese commit (`41af91c`) escribí que el `refreshToken` vence
+~25 h después del access token. Es falso: es lo de los 30 días de arriba. Quedó así
+en el README y en un comentario de `extension.js`. Además, al refrescar, la extensión
+borra `refreshTokenExpiresAt` si la respuesta no lo trae; como el vencimiento es fijo,
+lo correcto es conservarlo.
 
 **Para probar cambios:** en Wayland GNOME no recarga el código de una extensión con
 disable/enable. Hay que cerrar sesión y volver a entrar.

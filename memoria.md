@@ -22,6 +22,9 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 - **videos-marcas** — arrancado el 2026-09-07 con el reel de marca de Sooma. Sin
   remote en GitHub todavía.
 - **sooma-signature** — la carpeta no tiene git. Convendría versionarlo.
+- **claude-usage** — la sesión de Claude Code vence el **2026-11-20**: ese día hay
+  que hacer `/login` en el CLI. Además, corregir el README y el comentario de
+  `extension.js`, donde quedó el dato falso de las "25 h".
 
 **Para definir**
 
@@ -35,15 +38,14 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
 
-### 2026-10-22 — claude-usage: el token se muere con la compu apagada
+### 2026-10-22 — claude-usage: la sesión de Claude dura 30 días
 
-La extensión de GNOME de uso de Claude dejó de andar otra vez. Causa: la compu estuvo
-apagada del 9/10 al 20/10, y el `refreshToken` vence ~25 h después del access token,
-así que cuando volvió a prenderse no había con qué refrescar. El código está bien; la
-solución es `/login` en el CLI de Claude Code. Va a volver a pasar cada vez que la
-compu quede apagada más de un día y medio. Para que al menos se entienda, la
-extensión ahora detecta el token vencido y dice qué hacer en vez de un error genérico.
-Detalle en `proyectos/fuera-de-sooma.md`.
+La extensión de GNOME de uso de Claude dejó de andar otra vez. Causa: la sesión de
+Claude Code dura ~30 días desde el login y refrescar el token no la estira. Venció el
+10/10 (login del 11/9). La compu estuvo apagada del 9/10 al 20/10, y al principio
+pensé que esa era la causa, pero fue casualidad. Se arregla con `/login` en el CLI
+una vez por mes. La extensión ahora avisa con un mensaje claro en vez de un error
+genérico. Detalle en `proyectos/fuera-de-sooma.md`.
 
 ### 2026-09-11 — Guts se mantiene solo
 
