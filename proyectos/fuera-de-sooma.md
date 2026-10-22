@@ -42,3 +42,23 @@ Pendiente: ponerle git y subirlo.
 Videos de marca. Git local con un solo commit: el scaffold y el arranque del reel de
 Sooma. Para animación se usa HyperFrames (las skills están instaladas en la máquina).
 Pendiente: crearle el repo y pushear.
+
+## claude-usage — cuenta personal
+
+`~/.local/share/gnome-shell/extensions/claude-usage@ramireznicc` ·
+`git@github-ramireznicc:ramireznicc/claude-usage-extension.git`
+
+Extensión de GNOME (Shell 48–50) que muestra en la barra de arriba cuánto se gastó
+del límite de Claude (sesión de 5 h y semanal). No vive en `~/dev`: GNOME la carga
+desde esa carpeta, y el repo está ahí mismo.
+
+Lee el token de Claude Code de `~/.claude/.credentials.json` y lo refresca sola
+(desde el 2026-10-02).
+
+**Trampa conocida:** el `refreshToken` **no** dura 30 días como dice el README. Vence
+unas **25 h después** que el access token (~33 h desde el último login). Si la compu
+queda apagada más de un día y medio, nadie puede refrescarlo y la extensión muestra
+"Could not refresh token — open Claude Code". No es un bug del código: se arregla
+corriendo `claude` en una terminal y haciendo `/login`. La app de escritorio no
+renueva ese archivo, solo el CLI.
+Pendiente: corregir los "30 días" del README.

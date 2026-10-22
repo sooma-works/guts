@@ -6,7 +6,7 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 ## Ahora
 
-> Al 2026-09-11
+> Al 2026-10-22
 
 **En foco**
 
@@ -34,6 +34,14 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-10-22 — claude-usage: el token se muere con la compu apagada
+
+La extensión de GNOME de uso de Claude dejó de andar otra vez. Causa: la compu estuvo
+apagada del 9/10 al 20/10, y el `refreshToken` vence ~25 h después del access token,
+así que cuando volvió a prenderse no había con qué refrescar. El código está bien; la
+solución es `/login` en el CLI de Claude Code. Va a volver a pasar cada vez que la
+compu quede apagada más de un día y medio. Detalle en `proyectos/fuera-de-sooma.md`.
 
 ### 2026-09-11 — Guts se mantiene solo
 
