@@ -63,15 +63,17 @@ app de escritorio no renueva ese archivo, solo el CLI.
 Evidencia (2026-10-22): login del 11/9 → venció el 10/10, aunque el CLI había
 refrescado el 9/10. Login del 22/10 → vence el 20/11.
 
-Desde el 2026-10-22 la extensión lo detecta sola (por `refreshTokenExpiresAt` o porque
-el servidor rechaza el refresh con 400/401) y muestra *"Session expired — run `claude`
-in a terminal and /login"*. Si el server está caído muestra el código HTTP y reintenta.
+Desde el 2026-10-22 la extensión:
+- **avisa 3 días antes** en el menú: *"Sign-in needed in N d — run `claude` and
+  /login"*, para hacer el login cuando quede cómodo;
+- **detecta la sesión vencida** (por `refreshTokenExpiresAt` o porque el servidor
+  rechaza el refresh con 400/401) y muestra *"Session expired — run `claude` in a
+  terminal and /login"*;
+- si el server está caído, muestra el código HTTP y reintenta;
+- al refrescar, **conserva** `refreshTokenExpiresAt`, porque la fecha no cambia.
 
-**Error a corregir:** en ese commit (`41af91c`) escribí que el `refreshToken` vence
-~25 h después del access token. Es falso: es lo de los 30 días de arriba. Quedó así
-en el README y en un comentario de `extension.js`. Además, al refrescar, la extensión
-borra `refreshTokenExpiresAt` si la respuesta no lo trae; como el vencimiento es fijo,
-lo correcto es conservarlo.
+Un commit intermedio (`41af91c`) explicaba mal la causa ("25 h después del access
+token") y borraba esa fecha al refrescar. Se corrigió en `55f98ce`.
 
 **Para probar cambios:** en Wayland GNOME no recarga el código de una extensión con
 disable/enable. Hay que cerrar sesión y volver a entrar.

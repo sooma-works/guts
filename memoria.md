@@ -22,9 +22,8 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 - **videos-marcas** — arrancado el 2026-09-07 con el reel de marca de Sooma. Sin
   remote en GitHub todavía.
 - **sooma-signature** — la carpeta no tiene git. Convendría versionarlo.
-- **claude-usage** — la sesión de Claude Code vence el **2026-11-20**: ese día hay
-  que hacer `/login` en el CLI. Además, corregir el README y el comentario de
-  `extension.js`, donde quedó el dato falso de las "25 h".
+- **claude-usage** — la sesión de Claude Code vence el **2026-11-20**. La extensión
+  avisa en el menú desde el 17/11; ahí hay que hacer `/login` en el CLI.
 
 **Para definir**
 
@@ -44,8 +43,8 @@ La extensión de GNOME de uso de Claude dejó de andar otra vez. Causa: la sesi�
 Claude Code dura ~30 días desde el login y refrescar el token no la estira. Venció el
 10/10 (login del 11/9). La compu estuvo apagada del 9/10 al 20/10, y al principio
 pensé que esa era la causa, pero fue casualidad. Se arregla con `/login` en el CLI
-una vez por mes. La extensión ahora avisa con un mensaje claro en vez de un error
-genérico. Detalle en `proyectos/fuera-de-sooma.md`.
+una vez por mes. La extensión ahora avisa en el menú 3 días antes y, si se vence,
+lo dice claro en vez de mostrar un error genérico. Detalle en `proyectos/fuera-de-sooma.md`.
 
 ### 2026-09-11 — Guts se mantiene solo
 
