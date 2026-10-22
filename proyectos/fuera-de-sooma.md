@@ -55,10 +55,18 @@ desde esa carpeta, y el repo está ahí mismo.
 Lee el token de Claude Code de `~/.claude/.credentials.json` y lo refresca sola
 (desde el 2026-10-02).
 
-**Trampa conocida:** el `refreshToken` **no** dura 30 días como dice el README. Vence
-unas **25 h después** que el access token (~33 h desde el último login). Si la compu
-queda apagada más de un día y medio, nadie puede refrescarlo y la extensión muestra
-"Could not refresh token — open Claude Code". No es un bug del código: se arregla
-corriendo `claude` en una terminal y haciendo `/login`. La app de escritorio no
-renueva ese archivo, solo el CLI.
-Pendiente: corregir los "30 días" del README.
+**Trampa conocida:** el `refreshToken` vence unas **25 h después** que el access
+token (~33 h desde el último login), no a los 30 días. Si la compu queda apagada más
+de un día y medio, nadie puede refrescarlo. No es un bug: se arregla corriendo
+`claude` en una terminal y haciendo `/login`. La app de escritorio no renueva ese
+archivo, solo el CLI.
+
+Desde el 2026-10-22 la extensión lo detecta sola (por `refreshTokenExpiresAt` o porque
+el servidor rechaza el refresh con 400/401) y muestra *"Session expired — run `claude`
+in a terminal and /login"*. Si el server está caído muestra el código HTTP y reintenta.
+Al refrescar, actualiza `refreshTokenExpiresAt` o lo borra si la respuesta no lo trae,
+porque el valor viejo haría creer que el token nuevo ya venció.
+El README ya está corregido.
+
+**Para probar cambios:** en Wayland GNOME no recarga el código de una extensión con
+disable/enable. Hay que cerrar sesión y volver a entrar.
