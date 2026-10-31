@@ -6,7 +6,7 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 ## Ahora
 
-> Al 2026-10-22
+> Al 2026-10-31
 
 **En foco**
 
@@ -36,6 +36,19 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-10-31 — apt lento: no eran los mirrors
+
+Un `apt upgrade` tardó mucho y se revisaron repos y mirrors de la compu (Ubuntu
+26.04). La config está sana: `ubuntu.sources` apunta a `archive.ubuntu.com` y
+`security.ubuntu.com`, más Brave y Claude Desktop, sin duplicados ni proxy. El
+`ubuntu.sources.curtin.orig` que queda en `sources.list.d` lo ignora apt, no molesta.
+La demora vino de que entró un **kernel nuevo** (7.0.0-42: imagen, headers, módulos,
+initramfs y grub) entre 84 paquetes. Ese paso es lento siempre.
+Se midieron mirrors: `ar.archive.ubuntu.com` no es un mirror local, resuelve a los
+mismos servidores de Canonical. Los de Brasil (`mirror.uepg.br`, `sft.if.usp.br`)
+están al día pero la velocidad varió tanto como la del oficial. **No se cambió nada**:
+cambiar de mirror no rinde mientras no haya una diferencia sostenida.
 
 ### 2026-10-22 — claude-usage: la sesión de Claude dura 30 días
 
