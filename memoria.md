@@ -93,6 +93,9 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
   unos 300 MB más. YouTube pasó de 3,5 s a 2,2 s en abrir desde cero (1,1 s la
   segunda vez). **Ojo:** cuando el Play Store actualiza una app, vuelve a
   `speed-profile` y pierde la mejora: hay que repetir el comando para esa app.
+  No hay forma de evitarlo en el tele: `setprop pm.dexopt.install speed` lo
+  rechaza el sistema sin root. Se ofreció una tarea diaria desde la notebook que
+  recompile sola y **Nico prefirió pedirlo a mano** cuando lo note lento.
   Animaciones en 0 (las tres escalas en `settings global`) y caché limpiada con
   `pm trim-caches`.
 - Resultado: pasó de ~450 a ~600-680 MB de RAM libre.
