@@ -38,7 +38,9 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
   offline + música, internet por hotspot). Después: debloat por ADB como el TCL,
   modo dedicado (pantalla prendida con carga, todo arranca solo) y soporte con
   amortiguador. **Por qué el amortiguador:** la vibración de la moto rompe el
-  estabilizador óptico de la cámara. Falta saber qué celular es el principal.
+  estabilizador óptico de la cámara. **El principal es Android**, así que va
+  Headunit Reloaded. Próximo paso: Nico carga el Phone 1 y le hace reset de
+  fábrica; después se activa la depuración USB y arrancamos.
 
 ---
 
