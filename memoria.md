@@ -87,6 +87,14 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
 - Para manejar el tele por ADB, un "mantener apretado OK" de verdad se simula con
   `sendevent /dev/input/event2 1 28 1` … `1 28 0`. `input keyevent --longpress`
   llega como un toque común.
+- **Velocidad (2026-11-22):** el procesador es ARMv7 de 32 bits, lento para
+  traducir apps al vuelo. Compilamos completas las cinco apps y Projectivy con
+  `cmd package compile -m speed -f <paquete>` (venían en `speed-profile`). Ocupan
+  unos 300 MB más. YouTube pasó de 3,5 s a 2,2 s en abrir desde cero (1,1 s la
+  segunda vez). **Ojo:** cuando el Play Store actualiza una app, vuelve a
+  `speed-profile` y pierde la mejora: hay que repetir el comando para esa app.
+  Animaciones en 0 (las tres escalas en `settings global`) y caché limpiada con
+  `pm trim-caches`.
 - Resultado: pasó de ~450 a ~600-680 MB de RAM libre.
 - No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`).
 - **Sistema:** parche de seguridad del 2020-09-05, compilado en noviembre de 2020.
