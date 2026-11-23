@@ -30,6 +30,15 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 - **Óptica A.M.E.N.: pasar de "le gustó" a cerrar.** Falta definir qué incluye el
   trabajo y cuánto se cobra. Es lo que destraba el primer cliente real.
 - Armar una referencia de precios propia. Hoy cada presupuesto sale de cero.
+- **Nothing Phone 1 como pantalla de la moto** (idea del 2026-11-22, personal).
+  Usar el Phone 1 que no se usa como "CarPlay" en el soporte, para no subir el
+  celular principal. Propuesta: si el principal es Android, **Headunit Reloaded**
+  en el Phone 1 recibe Android Auto inalámbrico del principal (el Phone 1 es solo
+  pantalla). Si es iPhone, no hay espejo posible: el Phone 1 va autónomo (mapas
+  offline + música, internet por hotspot). Después: debloat por ADB como el TCL,
+  modo dedicado (pantalla prendida con carga, todo arranca solo) y soporte con
+  amortiguador. **Por qué el amortiguador:** la vibración de la moto rompe el
+  estabilizador óptico de la cámara. Falta saber qué celular es el principal.
 
 ---
 
