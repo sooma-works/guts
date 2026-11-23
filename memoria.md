@@ -47,8 +47,7 @@ En el wifi de casa (`192.168.100.0/24`, router en `.1`) hay dos teles:
   solo acepta Chromecast.
 
 Las IP las da el router por DHCP, así que pueden cambiar. Si no aparece, se busca
-por nombre con mDNS (`_androidtvremote2._tcp`), que es lo que lo delató. No contesta
-bien al ping, así que un barrido de ping solo no alcanza.
+por nombre con mDNS (`_androidtvremote2._tcp`), que es lo que lo delató.
 
 ### 2026-10-31 — apt lento: no eran los mirrors
 
