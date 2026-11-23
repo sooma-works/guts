@@ -6,7 +6,7 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 
 ## Ahora
 
-> Al 2026-10-31
+> Al 2026-11-22
 
 **En foco**
 
@@ -36,6 +36,19 @@ Lo que sé de lo que venimos haciendo. Arriba el presente, abajo el registro.
 ## Registro
 
 Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis meses.
+
+### 2026-11-22 — Los teles de la red de casa
+
+En el wifi de casa (`192.168.100.0/24`, router en `.1`) hay dos teles:
+
+- **`leles`** — el **Android TV**, en `192.168.100.9`. Tiene abiertos los puertos del
+  control remoto de Android TV (6466/6467) y Chromecast integrado (8008/8009).
+- **`50" Crystal UHD`** — un Samsung en `192.168.100.58`. No es Android (es Tizen),
+  solo acepta Chromecast.
+
+Las IP las da el router por DHCP, así que pueden cambiar. Si no aparece, se busca
+por nombre con mDNS (`_androidtvremote2._tcp`), que es lo que lo delató. No contesta
+bien al ping, así que un barrido de ping solo no alcanza.
 
 ### 2026-10-31 — apt lento: no eran los mirrors
 
