@@ -67,8 +67,8 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
   del micrófono del control ya no hace nada.
 - No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`).
 - **Sistema:** parche de seguridad del 2020-09-05, compilado en noviembre de 2020.
-  TCL no saca más versiones para este modelo; lo que sí se actualiza son las apps
-  por el Play Store.
+  Seis años sin parche: casi seguro TCL ya no lo actualiza (no lo verificamos en
+  el menú de actualización). Las apps sí se actualizan por el Play Store.
 
 Para volver atrás una app: `adb shell pm enable <paquete>`.
 
