@@ -58,8 +58,17 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
 - Apagamos `com.tcl.bi` (telemetría de TCL), `com.tcl.esticker` (stickers y
   promos), `com.tcl.appmarket2` (tienda de TCL), `com.tcl.usercenter` (cuenta TCL)
   y `com.google.android.tvrecommendations` (las filas de recomendados).
-- No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`) ni la
-  búsqueda por voz (`katniss`): sin eso se rompe el botón del micrófono.
+- **Launcher nuevo: Projectivy** (`com.spocky.projengmenu`), del Play Store. En
+  Android 9 el launcher de Google (`com.google.android.tvlauncher`) tiene prioridad
+  de sistema y le gana a `set-home-activity`, así que lo apagamos. Si Projectivy
+  falla, el tele cae a una pantalla de inicio de emergencia de TCL.
+- Búsqueda por voz apagada (`com.google.android.katniss` y
+  `com.google.android.speech.pumpkin`) a pedido: no usan el micrófono. El botón
+  del micrófono del control ya no hace nada.
+- No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`).
+- **Sistema:** parche de seguridad del 2020-09-05, compilado en noviembre de 2020.
+  TCL no saca más versiones para este modelo; lo que sí se actualiza son las apps
+  por el Play Store.
 
 Para volver atrás una app: `adb shell pm enable <paquete>`.
 
