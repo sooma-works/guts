@@ -41,11 +41,27 @@ Lo más nuevo arriba. Una entrada por cosa que valga la pena recordar en seis me
 
 En el wifi de casa (`192.168.100.0/24`, router en `.1`) hay dos teles:
 
-- **`leles`** — el **Android TV**, un **TCL**, en `192.168.100.9`. Va lento; se
-  evalúa cambiarle el launcher y sacarle apps de fábrica por ADB. Tiene abiertos los puertos del
+- **`leles`** — el **Android TV**, un **TCL**, en `192.168.100.9`. Tiene abiertos los puertos del
   control remoto de Android TV (6466/6467) y Chromecast integrado (8008/8009).
 - **`50" Crystal UHD`** — un Samsung en `192.168.100.58`. No es Android (es Tizen),
   solo acepta Chromecast.
+
+**Ficha del TCL:** modelo `UnionTV`, Android TV 9 (`PPR2.180905.006.A1`), kernel
+4.4, 1,4 GB de RAM y 4,2 GB de almacenamiento. Es lento porque se queda sin RAM.
+ADB por red en el puerto 5555: se abre solo con la depuración USB activada, aunque
+el menú no muestre "depuración por red". Esta compu ya está autorizada.
+
+**Qué se le hizo (2026-11-22), todo reversible:**
+
+- Animaciones: ya estaban en 0,5× cuando llegamos.
+- Ya venían apagadas: Play Music, Galería, Play Películas y Play Juegos.
+- Apagamos `com.tcl.bi` (telemetría de TCL), `com.tcl.esticker` (stickers y
+  promos), `com.tcl.appmarket2` (tienda de TCL), `com.tcl.usercenter` (cuenta TCL)
+  y `com.google.android.tvrecommendations` (las filas de recomendados).
+- No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`) ni la
+  búsqueda por voz (`katniss`): sin eso se rompe el botón del micrófono.
+
+Para volver atrás una app: `adb shell pm enable <paquete>`.
 
 Las IP las da el router por DHCP, así que pueden cambiar. Si no aparece, se busca
 por nombre con mDNS (`_androidtvremote2._tcp`), que es lo que lo delató.
