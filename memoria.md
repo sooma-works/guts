@@ -65,6 +65,21 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
 - Búsqueda por voz apagada (`com.google.android.katniss` y
   `com.google.android.speech.pumpkin`) a pedido: no usan el micrófono. El botón
   del micrófono del control ya no hace nada.
+- **Apps que usan:** Netflix, YouTube, Crunchyroll, HBO Max y Disney+. Nada más.
+  HBO Max (`com.wbd.stream`) no estaba y la instalamos desde el Play Store.
+- Quitamos con `pm uninstall -k --user 0` todo lo demás que era de cara al usuario:
+  Prime Video, los reproductores de TCL (audio, fotos, video y media center),
+  `tvweishi`, `copydatatotv`, `keyhelp`, `backdrop` (protector de Google),
+  TalkBack, la cola de impresión, `feedback`, `bugreportsender` y el launcher viejo
+  (`leanbacklauncher` y dos de sus complementos). Para devolver una:
+  `adb shell cmd package install-existing <paquete>`.
+- Dejamos Chromecast (`mediashell`): sirve para mandar cosas desde el celular.
+- **Projectivy configurado:** la fila "Aplicaciones Móviles" oculta (mostraba
+  apps internas) y GalaView oculto (es una promo de TCL que viene en
+  `com.tcl.partnercustomizer`; no la apagamos porque ese paquete también maneja
+  botones del control). Se ve: Entradas (HDMI), las cinco apps más Play Store y
+  TV, y "Continuar viendo".
+- Resultado: pasó de ~450 a ~600-680 MB de RAM libre.
 - No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`).
 - **Sistema:** parche de seguridad del 2020-09-05, compilado en noviembre de 2020.
   Seis años sin parche: casi seguro TCL ya no lo actualiza (no lo verificamos en
