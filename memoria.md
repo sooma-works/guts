@@ -79,6 +79,14 @@ el menú no muestre "depuración por red". Esta compu ya está autorizada.
   `com.tcl.partnercustomizer`; no la apagamos porque ese paquete también maneja
   botones del control). Se ve: Entradas (HDMI), las cinco apps más Play Store y
   TV, y "Continuar viendo".
+- **Orden de filas:** primero "Aplicaciones de TV", segunda "Entradas". Projectivy
+  no lo deja cambiar desde "Editar categorías": hay que prender Ajustes →
+  Apariencia → Cabeceras izquierdas → Habilitar + "Mostrar reordenado", ir a la
+  izquierda de todo de una fila en el inicio y usar las flechas. Quedaron
+  prendidas; desde ahí lo siguió Nico a mano.
+- Para manejar el tele por ADB, un "mantener apretado OK" de verdad se simula con
+  `sendevent /dev/input/event2 1 28 1` … `1 28 0`. `input keyevent --longpress`
+  llega como un toque común.
 - Resultado: pasó de ~450 a ~600-680 MB de RAM libre.
 - No tocamos los updates (`com.tcl.versionUpdateApp`, `com.tcl.rc.ota`).
 - **Sistema:** parche de seguridad del 2020-09-05, compilado en noviembre de 2020.
